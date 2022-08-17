@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int A[50],i,a,b,n;
+	printf("Enter size of an array");
+	scanf("%d",&n);
+	a=0;
+	b=1;
+	printf("%d\n%d\n",a,b);
+	for(i=2;i<n;i++)
+	{
+	A[i]=a+b; 
+	printf("%d\n",A[i]);
+	
+	a=b;
+	b=A[i];
+	
+}
+		
+	return 0;	
+		
+			
+}
